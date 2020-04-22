@@ -35,8 +35,8 @@ TArray<FString> UBullCowCartridge::GetValidWords(const TArray<FString>& WordList
 
     for (FString Word : WordList)
     {
-        if (Word.Len() >= MIN_WORD_SIZE && 
-            Word.Len() <= MAX_WORD_SIZE && 
+        if (Word.Len() >= MinWordSize && 
+            Word.Len() <= MaxWordSize && 
             IsIsogram(Word))
         {
             ValidWords.Emplace(Word);
